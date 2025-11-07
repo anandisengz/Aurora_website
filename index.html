@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURORA SKIN - Rooted in Nature, Perfected by Science</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#333333',
+                        'brand-gray': '#6B7280',
+                        'brand-light-gray': '#F9FAFB',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'sans', sans-serif;
+            color: #333333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'serif', serif;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #333333;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <div class="max-w-7xl mx-auto border-x border-b border-gray-200 min-h-screen flex flex-col">
+
+        <header class="border-b border-gray-200 px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between py-6">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-serif font-medium tracking-wider text-brand-dark">
+                        AURORA SKIN
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="shop.html" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-dark">Shop</a>
+                    <a href="about-us.html" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-dark">Our Story</a>
+                    <a href="ingredients.html" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-dark">Ingredients</a>
+                    <a href="#" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-dark">Reviews</a>
+                </div>
+                
+                <div class="flex-shrink-0">
+                    <a href="cart.html" class="text-brand-gray hover:text-brand-dark">
+                        <i data-feather="shopping-bag" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-1">
+            
+            <section class="relative h-[600px] flex items-center justify-center text-center bg-brand-light-gray">
+                <div class="absolute inset-0 bg-black opacity-10"></div> <div class="relative z-10 p-8">
+                    <h1 class="text-6xl md:text-7xl font-serif font-medium text-brand-dark">Pure. Potent. Proven.</h1>
+                    <p class="text-xl text-brand-gray mt-4 max-w-xl mx-auto">
+                        Discover skincare that transforms with the best of nature and science.
+                    </p>
+                    <a href="shop.html" class="inline-block bg-brand-dark text-white py-3 px-10 rounded-md mt-8 text-lg font-medium hover:bg-opacity-80 transition-colors">
+                        Shop All
+                    </a>
+                </div>
+            </section>
+
+            <section class="px-4 sm:px-6 lg:px-8 my-20">
+                <h2 class="text-4xl font-serif text-brand-dark text-center mb-12">Our Best Sellers</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="text-center">
+                        <a href="product-detail.html" class="block bg-brand-light-gray p-8 rounded mb-4">
+                            <img src="/images/Dior-serum.jpg" alt="Radiance Serum" class="h-64 w-full object-contain">
+                        </a>
+                        <h3 class="text-xl font-serif text-brand-dark">Radiance Serum</h3>
+                        <p class="text-brand-gray text-sm">Boosts luminosity and evens skin tone</p>
+                        <p class="text-lg font-medium text-brand-dark mt-2">$75.00</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="#" class="block bg-brand-light-gray p-8 rounded mb-4">
+                            <img src="/images/Charlotte-tilbury-moisturizer.jpg" alt="Deep Hydration Cream" class="h-64 w-full object-contain mix-blend-multiply">
+                        </a>
+                        <h3 class="text-xl font-serif text-brand-dark">Deep Hydration Cream</h3>
+                        <p class="text-brand-gray text-sm">Locks in moisture for 24 hours</p>
+                        <p class="text-lg font-medium text-brand-dark mt-2">$48.00</p>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#" class="block bg-brand-light-gray p-8 rounded mb-4">
+                            <img src="/images/Guerlain-cleanser.jpg" alt="Purifying Cleanser" class="h-64 w-full object-contain">
+                        </a>
+                        <h3 class="text-xl font-serif text-brand-dark">Purifying Cleanser</h3>
+                        <p class="text-brand-gray text-sm">Gently removes impurities, not moisture</p>
+                        <p class="text-lg font-medium text-brand-dark mt-2">$32.00</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center my-20 px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-light-gray p-12 rounded flex items-center justify-center h-96">
+                    <img src="/images/Serum.jpg" alt="Serum bottle" class="max-h-80 object-contain">
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif text-brand-gray mb-2">Our Philosophy</h3>
+                    <h2 class="text-4xl font-serif text-brand-dark mb-4">Rooted in Nature, Perfected by Science</h2>
+                    <p class="text-brand-gray leading-relaxed mb-6">
+                        We believe in the power of nature, elevated by scientific innovation. Our formulas are crafted with pure, ethically-sourced ingredients and rigorously tested for safety and efficacy.
+                    </p>
+                    <a href="about-us.html" class="inline-block border border-brand-dark text-brand-dark py-3 px-8 rounded-md text-base font-medium hover:bg-brand-dark hover:text-white transition-colors">
+                        Learn Our Story
+                    </a>
+                </div>
+            </section>
+
+            <section class="bg-brand-light-gray py-20 text-center px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif text-brand-dark mb-4">Join The Aurora List</h2>
+                <p class="text-brand-gray max-w-xl mx-auto mb-8">
+                    Be the first to know about new products, exclusive offers, and skincare insights.
+                </p>
+                <form class="flex max-w-lg mx-auto">
+                    <input type="email" placeholder="Enter your email" class="flex-1 border border-gray-300 p-3 rounded-l-md focus:ring-brand-dark focus:border-brand-dark" required>
+                    <button type="submit" class="bg-brand-dark text-white py-3 px-8 rounded-r-md font-medium hover:bg-opacity-80 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 mt-auto">
+        <div class="flex justify-between items-center text-sm">
+            <div class="flex space-x-6 text-brand-gray">
+                <a href="#" class="hover:text-brand-dark">Contact Us</a>
+                <a href="#" class="hover:text-brand-dark">FAQS</a>
+                <a href="admin-login.html" class="hover:text-brand-dark">Admin Login</a>
+            </div>
+            <div>
+                <a href="#" class="text-brand-gray hover:text-brand-dark">
+                    <i data-feather="twitter" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

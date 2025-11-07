@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Admin Panel</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        'admin-dark': '#374151', // Dark sidebar
+                        'admin-body': '#F9FAFB', // Main body bg
+                        'brand-dark': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'serif', serif; }
+    </style>
+</head>
+<body class="bg-admin-body">
+
+    <div class="flex h-screen bg-gray-100">
+        
+        <aside class="w-64 bg-admin-dark text-gray-200 flex flex-col flex-shrink-0">
+            <div class="py-6 px-8 border-b border-gray-700">
+                <a href="admin-dashboard.html" class="text-2xl font-serif font-medium tracking-wider text-white">
+                    AURORA SKIN
+                </a>
+            </div>
+            
+            <nav class="flex-1 mt-6 px-4">
+                <a href="admin-dashboard.html" class="flex items-center py-3 px-4 rounded text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer">
+                    <i data-feather="grid" class="w-5 h-5 mr-3"></i>
+                    Dashboard
+                </a>
+                
+                <a href="admin-products.html" class="flex items-center py-3 px-4 rounded text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer mt-2">
+                    <i data-feather="box" class="w-5 h-5 mr-3"></i>
+                    Products
+                </a>
+                
+                <a href="admin-orders.html" class="flex items-center py-3 px-4 rounded text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer mt-2">
+                    <i data-feather="shopping-cart" class="w-5 h-5 mr-3"></i>
+                    Orders
+                </a>
+
+                <a href="admin-customers.html" class="flex items-center py-3 px-4 rounded text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer mt-2">
+                    <i data-feather="users" class="w-5 h-5 mr-3"></i>
+                    Customers
+                </a>
+                
+                <a href="admin-analytics.html" class="flex items-center py-3 px-4 rounded text-gray-400 hover:bg-gray-700 hover:text-white cursor-pointer mt-2">
+                    <i data-feather="bar-chart-2" class="w-5 h-5 mr-3"></i>
+                    Analytics
+                </a>
+                
+                <a href="admin-users.html" class="flex items-center py-3 px-4 rounded bg-gray-700 text-white cursor-pointer mt-2">
+                    <i data-feather="user" class="w-5 h-5 mr-3"></i>
+                    Users
+                </a>
+            </nav>
+            
+            <div class="py-4 px-8 border-t border-gray-700 text-sm text-gray-500">
+                Admin Panel Footer | 2024
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col overflow-hidden">
+            
+            <header class="bg-white shadow-sm border-b border-gray-200">
+                <div class="flex items-center justify-between h-16 px-8">
+                    <div class="flex items-center space-x-6 text-sm font-medium text-gray-600">
+                        <a href="admin-dashboard.html" class="text-gray-500 hover:text-brand-dark">Dashboard</a>
+                        <a href="admin-products.html" class="text-gray-50t-brand-dark">Products</a>
+                        <a href="admin-orders.html" class="text-gray-500 hover:text-brand-dark">Orders</a>
+                        <a href="admin-customers.html" class="text-gray-500 hover:text-brand-dark">Customers</a>
+                        <a href="admin-analytics.html" class="text-gray-500 hover:text-brand-dark">Reports</a>
+                        <a href="#" class="text-gray-500 hover:text-brand-dark">Settings</a>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <a href="#" class="flex items-center text-sm text-gray-600">
+                            Admin User
+                            <i data-feather="user" class="w-5 h-5 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-8">
+
+                <div>
+                    <h1 class="text-4xl font-serif text-brand-dark mb-8">User Management</h1>
+                    
+                    <div class="bg-white p-12 rounded-lg shadow-md text-center">
+                        <i data-feather="users" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
+                        <h3 class="text-lg font-serif font-medium text-brand-dark mb-2">User Management Placeholder</h3>
+                        <p class="text-gray-500">
+                            This is where you would add, edit, and manage admin users.
+                        </p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </main>
+    </div>
+
+    <script>
+        // 1. Initialize Feather Icons
+        feather.replace();
+    </script>
+
+</body>
+</html>
